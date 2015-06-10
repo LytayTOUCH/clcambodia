@@ -7,7 +7,36 @@ Description: Creationline Cambodia theme template is desing to use for the compa
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: Creationline Cambodia
-
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+@import url(assets/semantic.min.css);
+/*@import url(assets/binding_style.css);*/
+body {
+  background: #ffffff;
+}
+.ui.menu{
+  background: #12408F;
+}
+
+.ui.menu .item{
+  color: #ffffff;
+  font-weight: 800;
+}
+.ui.menu>a.item:hover {
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer{
+  position: relative;
+  background-color: #12408F;
+  box-shadow: 0 0 0 1px rgba(39,41,43,.15),0 1px 2px 0 rgba(0,0,0,.05);
+  margin: 5px 0px;
+  padding: 5px 10px;
+  color: #ffffff;
+  border-radius: .2857rem;
+  border: none;
+}
