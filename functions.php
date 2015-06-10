@@ -60,23 +60,23 @@ add_action( 'init', 'register_my_menus' );
 
 function hongstar_widgets_init() {
   register_sidebar( array(
-    'name' => __( 'Banner Header Image', 'hongstar' ),
+    'name' => __( 'Banner Header Image', 'clcambodia' ),
     'id' => 'sidebar-1',
-    'description' => __( 'This Widget is use to show the banner of the website', 'hongstar' ),
+    'description' => __( 'This Widget is use to show the banner of the website', 'clcambodia' ),
     'before_widget' => '<div>',
     'after_widget' => '</div>',
     'before_title' => '<h4>',
     'after_title' => '</h4>',
   ) );
   register_sidebar( array(
-    'name' => __( 'Sitemap', 'hongstar' ),
+    'name' => __( 'Sitemap', 'clcambodia' ),
     'id' => 'sidebar-4',
     'description' => __( 'Show the sitemap of website', 'clcambodia' ),
     'class'         => '',
     'before_widget' => '<div>',
     'after_widget' => '</div>',
-    'before_title' => '<h4 class="ui dividing header">',
-    'after_title' => '</h4>',
+    'before_title' => '<h4 class="ui dividing header"><span class="ui large label" style="background-color: #12408F;color: #ffffff;">',
+    'after_title' => '</h4></span>'
   ) );
   register_sidebar( array(
     'name' => __( 'Address Box', 'clcambodia' ),
@@ -84,26 +84,26 @@ function hongstar_widgets_init() {
     'description' => __( 'Show Address', 'clcambodia'),
     'before_widget' => '<div>',
     'after_widget' => '</div>',
-    'before_title' => '<h4 class="ui dividing header">',
-    'after_title' => '</h4>',
+    'before_title' => '<h4 class="ui dividing header"><span class="ui large label" style="background-color: #12408F;color: #ffffff;"> ',
+    'after_title' => '</h4></span>'
   ) );
   register_sidebar( array(
-    'name' => __( 'Facebook Like Page', 'hongstar' ),
+    'name' => __( 'Facebook Like Page', 'clcambodia' ),
     'id' => 'sidebar-6',
     'description' => __( 'Show embeded iframe of facebook', 'clcambodia' ),
     'before_widget' => '<div>',
     'after_widget' => '</div>',
-    'before_title' => '<h4 class="ui dividing header">',
-    'after_title' => '</h4>',
+    'before_title' => '<h4 class="ui dividing header"><span class="ui large label" style="background-color: #12408F;color: #ffffff;"> ',
+    'after_title' => '</h4></span>'
   ) );
   register_sidebar( array(
-    'name' => __( 'Footer', 'hongstar' ),
+    'name' => __( 'Footer', 'clcambodia' ),
     'id' => 'sidebar-2',
-    'description' => __( 'Show footer of the website', 'hongstar' ),
+    'description' => __( 'Show footer of the website', 'clcambodia' ),
     'before_widget' => '<div>',
     'after_widget' => '</div>',
-    'before_title' => '<h4 class="ui dividing header">',
-    'after_title' => '</h4>',
+    'before_title' => '<h4 class="ui dividing header"><span class="ui large label" style="background-color: #12408F;color: #ffffff;"> ',
+    'after_title' => '</h4></span>'
   ) );
 }
 add_action( 'widgets_init', 'hongstar_widgets_init' );

@@ -18,14 +18,18 @@
     </div>
 
     <div class="thirteen wide column" style="padding-bottom: 0px;">
-          <div class="ui menu">
-              <?php
-                foreach ( wp_get_nav_menu_items( 'header-menu' ) as $nav_item ) {
-                  echo '<a href="' . $nav_item->url . '"class="item ' . implode(' ', $nav_item->classes) . '">' . $nav_item->title . '</a>';
-                }
-              ?>
+          <div class="row">
+            <br/><br/>
           </div>
-
+          <div class="row" style="margin-top: 5px;">
+            <div class="ui menu">
+                <?php
+                  foreach ( wp_get_nav_menu_items( 'header-menu' ) as $nav_item ) {
+                    echo '<a href="' . $nav_item->url . '"class="item ' . implode(' ', $nav_item->classes) . '">' . $nav_item->title . '</a>';
+                  }
+                ?>
+            </div>
+          </div>
     </div>  
 </div>
 
