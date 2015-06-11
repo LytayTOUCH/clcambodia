@@ -13,7 +13,9 @@
     
     <div class="three wide column" style="padding-bottom: 0px;padding-right: 0px;">
         <div class="centered">
-          <?php if ( dynamic_sidebar('Banner Header Image') ) : else : endif; ?>
+          <a href="<?php bloginfo('url'); ?>/">
+               <img src="<?php header_image(); ?>" class="ui medium rounded image centered"/>
+          </a>
         </div>
     </div>
 
